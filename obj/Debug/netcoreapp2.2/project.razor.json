@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\XtendersProject.csproj",
+  "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\XtendersProject.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,83 +2961,83 @@
   "RootNamespace": "XtendersProject",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Admin\\Products\\Edit.cshtml",
-      "TargetPath": "Pages\\Admin\\Products\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Shared\\_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Admin\\Products\\Create.cshtml",
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Create.cshtml",
       "TargetPath": "Pages\\Admin\\Products\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Admin\\Products\\Details.cshtml",
-      "TargetPath": "Pages\\Admin\\Products\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Admin.cshtml",
-      "TargetPath": "Pages\\Admin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Shared\\_BulmaLayout.cshtml",
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Shared\\_BulmaLayout.cshtml",
       "TargetPath": "Pages\\Shared\\_BulmaLayout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Shared\\_CookieConsentPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Admin\\Products\\Index.cshtml",
-      "TargetPath": "Pages\\Admin\\Products\\Index.cshtml",
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Admin.cshtml",
+      "TargetPath": "Pages\\Admin.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Admin\\Products\\Delete.cshtml",
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Delete.cshtml",
       "TargetPath": "Pages\\Admin\\Products\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Catalogue.cshtml",
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Index.cshtml",
+      "TargetPath": "Pages\\Admin\\Products\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Catalogue.cshtml",
       "TargetPath": "Pages\\Catalogue.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ansar\\Desktop\\SaltProjectWebsite\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Edit.cshtml",
+      "TargetPath": "Pages\\Admin\\Products\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Details.cshtml",
+      "TargetPath": "Pages\\Admin\\Products\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     }
   ],
