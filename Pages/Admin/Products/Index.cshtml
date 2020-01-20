@@ -1,54 +1,70 @@
-@page
-@model XtendersProject.Pages.Admin.Products.IndexModel
+﻿@page
+@model XtendersProject.IndexModel
 
 @{
     ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].PicUrl)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].AddedDate)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.Product) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PicUrl)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AddedDate)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+<div class="card">
+
+
+
+    <div class="card-body">
+        <h1>Manage Products</h1>
+
+        <p>
+            <a asp-page="Create" class="btn btn-outline-info">Create New</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Product[0].Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Product[0].Description)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Product[0].PicUrl)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Product[0].AddedDate)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Product)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+                        <td>
+                            <img src="@Html.DisplayFor(modelItem => item.PicUrl)" width="100px" height="100px" />
+
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AddedDate)
+                        </td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <a asp-page="./Edit" class="btn btn-sm btn-outline-info" asp-route-id="@item.ID">Edit</a>
+                                <a asp-page="./Delete" class="btn btn-sm btn-outline-danger" asp-route-id="@item.ID">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+

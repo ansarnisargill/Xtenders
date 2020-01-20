@@ -1,8 +1,8 @@
 ﻿@page
 @model IndexModel
 @{
-ViewData["Title"] = "Home page";
-Layout = "~/Pages/Shared/_BulmaLayout.cshtml";
+    ViewData["Title"] = "Home page";
+    Layout = "~/Pages/Shared/_BulmaLayout.cshtml";
 
 }
 <section class="hero themeBGColor is-medium is-bold">
@@ -15,7 +15,7 @@ Layout = "~/Pages/Shared/_BulmaLayout.cshtml";
                 @Model.homePageData.TagLine
             </h1>
             <h2 class="subtitle">
-            @Model.homePageData.MainIntro
+                @Model.homePageData.MainIntro
             </h2>
         </div>
     </div>
@@ -36,9 +36,11 @@ Layout = "~/Pages/Shared/_BulmaLayout.cshtml";
                 <div class="card-content">
                     <div class="content">
                         <h4>Tristique senectus et netus et. </h4>
-                        <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec.
+                        <p>
+                            Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec.
                             Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut
-                            consequat semper viverra nam.</p>
+                            consequat semper viverra nam.
+                        </p>
                         <p><a href="#">Learn more</a></p>
                     </div>
                 </div>
@@ -52,10 +54,12 @@ Layout = "~/Pages/Shared/_BulmaLayout.cshtml";
                 <div class="card-content">
                     <div class="content">
                         <h4>Tempor orci dapibus ultrices in.</h4>
-                        <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed
+                        <p>
+                            Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed
                             arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas
                             cmonsu songue. Phasellus vestibulum lorem
-                            sed risus.</p>
+                            sed risus.
+                        </p>
                         <p><a href="#">Learn more</a></p>
                     </div>
                 </div>
@@ -69,9 +73,11 @@ Layout = "~/Pages/Shared/_BulmaLayout.cshtml";
                 <div class="card-content">
                     <div class="content">
                         <h4> Leo integer malesuada nunc vel risus. </h4>
-                        <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla
+                        <p>
+                            Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla
                             pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra
-                            maecenas accumsan lacus vel facilisis.</p>
+                            maecenas accumsan lacus vel facilisis.
+                        </p>
                         <p><a href="#">Learn more</a></p>
                     </div>
                 </div>
@@ -80,139 +86,30 @@ Layout = "~/Pages/Shared/_BulmaLayout.cshtml";
     </div>
     <div class="intro column is-8 is-offset-2">
         <h2 class="title">Perfect for developers or designers!</h2><br>
-        <p class="subtitle">Vel fringilla est ullamcorper eget nulla facilisi. Nulla facilisi nullam vehicula ipsum a.
-            Neque egestas congue quisque egestas diam in arcu cursus.</p>
+        <p class="subtitle">
+            Vel fringilla est ullamcorper eget nulla facilisi. Nulla facilisi nullam vehicula ipsum a.
+            Neque egestas congue quisque egestas diam in arcu cursus.
+        </p>
     </div>
     <div class="row columns is-multiline">
-                <div class="column is-one-third">
-                    <div class="card large round">
-                        <div class="card-image ">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com/Jy6luiLBsrk" alt="Image">
-                            </figure>
+        @foreach (var p in Model.Products)
+        {
+            <div class="column is-one-third">
+                <div class="card large round">
+                    <div class="card-image ">
+                        <figure class="image">
+                            <img src=@p.PicUrl alt="@p.Name">
+                        </figure>
+                    </div>
+                    <div class="card-content has-text-centered">
+                       
+                        <div class="content">
+                           @p.Description
                         </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">Atsui</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#"></a></span></p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                            </div>
-                        </div>
+                        <button class="button is-outlined is-primary is-12" >Get A Quote</button>
                     </div>
                 </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com//Rfflri94rs8" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src='http://www.radfaces.com/images/avatars/richard-wang.jpg' alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">Sphirou Sapphirou</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">twitterid</a></span></p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com/b6VzeoRZiS0" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src='http://www.radfaces.com/images/avatars/jeffrey-douglas.jpg' alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">PlayTheFallen</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">twitterid</a></span></p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Sometimes I dip my nose into my cereals. I do it coz it's funny.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://i.imgsafe.org/a4/a4bda71ae4.jpeg" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="http://www.radfaces.com/images/avatars/scrappy-doo.jpg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">FelixCAT</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">twitterid</a></span></p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com/ogYIzsNGu3Y" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="http://www.radfaces.com/images/avatars/scrappy-doo.jpg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">ScoobyDOG</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">twitterid</a></span></p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
+            </div>
+        }
+    </div>
 </section>
