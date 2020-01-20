@@ -20,8 +20,8 @@ html {
 }
 
 .hero {
-  background-image: url(https://picsum.photos/id/381/1920/1080);
-  background: linear-gradient(rgba(31, 44, 108, 0.65), rgba(31, 44, 108, 0.65)), rgba(0, 0, 0, 0.55) url("https://picsum.photos/id/381/1920/1080") no-repeat;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/61/Himalayan_salt_of_Sa%C3%BAde_flea_market%2C_S%C3%A3o_Paulo%2C_Brazil.jpg);
+  background: linear-gradient(rgba(31, 44, 108, 0.65), rgba(31, 44, 108, 0.65)), rgba(0, 0, 0, 0.55) url("https://upload.wikimedia.org/wikipedia/commons/6/61/Himalayan_salt_of_Sa%C3%BAde_flea_market%2C_S%C3%A3o_Paulo%2C_Brazil.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;

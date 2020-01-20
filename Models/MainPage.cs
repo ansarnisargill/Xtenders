@@ -12,11 +12,9 @@ namespace XtendersProject.Models
         [Display(Name = "Main Tag Line")]
         [Required]
         public string TagLine { get; set; }
-        [Display(Name = "Main Intro")]
+                [Display(Name = "Main Intro")]
         [Required]
         public string MainIntro { get; set; }
-        [Display(Name = "Announcement")]
-        public string Announcement { get; set; }
 
     }
 }

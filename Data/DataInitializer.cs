@@ -14,13 +14,7 @@ namespace XtendersProject.Data
             if (!context.Products.Any())
             {
 
-                var product = new Product()
-                {
-                    AddedDate = DateTime.Now,
-                    Description = "This is our best product we had in our catalogue",
-                    Name = "Very best Salt",
-                    PicUrl = ""
-                };
+                var product = new Product();
                 context.Products.Add(product);
             }
             if (!context.HomeData.Any())
@@ -28,8 +22,7 @@ namespace XtendersProject.Data
                 var data = new HomePageData()
                 {
                     TagLine = "The new standard in < Salt Artifacts >",
-                    MainIntro = "At Xtenders We produce best salt products from pure Hamalyian Salt Extracted from Pakistans BIGGEST salt mines",
-                    Announcement = "Now shipment are faster via our partners across the globe"
+                    MainIntro = "At Xtenders We produce best salt products from pure Hamalyian Salt Extracted from Pakistans BIGGEST salt mines"
                 };
                 context.HomeData.Add(data);
             }

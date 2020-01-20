@@ -1,32 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\it\\Desktop\\Xtenders\\XtendersProject.csproj": {}
+    "C:\\Users\\Ansar\\Desktop\\Xtenders\\XtendersProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\it\\Desktop\\Xtenders\\XtendersProject.csproj": {
+    "C:\\Users\\Ansar\\Desktop\\Xtenders\\XtendersProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\it\\Desktop\\Xtenders\\XtendersProject.csproj",
+        "projectUniqueName": "C:\\Users\\Ansar\\Desktop\\Xtenders\\XtendersProject.csproj",
         "projectName": "XtendersProject",
-        "projectPath": "C:\\Users\\it\\Desktop\\Xtenders\\XtendersProject.csproj",
-        "packagesPath": "C:\\Users\\it\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\it\\Desktop\\Xtenders\\obj\\",
+        "projectPath": "C:\\Users\\Ansar\\Desktop\\Xtenders\\XtendersProject.csproj",
+        "packagesPath": "C:\\Users\\Ansar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ansar\\Desktop\\Xtenders\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\it\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Ansar\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,16 +70,10 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }

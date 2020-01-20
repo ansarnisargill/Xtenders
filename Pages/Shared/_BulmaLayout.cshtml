@@ -5,13 +5,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] </title>
+    @*
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">*@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
     <link rel="stylesheet" href="~/css/bulma.css" />
-
     <link href="~/css/hero.css" rel="stylesheet" />
+    <link href="~/css/showcase.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="~/css/site.css" />
+
 
 </head>
 
@@ -25,8 +29,8 @@
         <nav class="navbar">
             <div class="container">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="/index">
-                        <img src="https://raw.githubusercontent.com/ansarnisargill/Xtenders/master/wwwroot/Images/xtenders.png" alt="Xtenders International Logo">
+                    <a class="navbar-item" href="/Index">
+                        <img src="../images/xtenders.png" alt="Xtenders International Logo">
                     </a>
                     <span class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
@@ -36,7 +40,7 @@
                 </div>
                 <div id="navbarMenu" class="navbar-menu">
                     <div class="navbar-end">
-                        <a class="navbar-item is-active">
+                        <a class="navbar-item" href="/Index">
                             Home
                         </a>
                         <a class="navbar-item" href="/Catalogue">
@@ -45,10 +49,10 @@
                         <a class="navbar-item">
                             Get A Quote
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="/About">
                             About Us
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="/Contact">
                             Contact Us
                         </a>
                     </div>
@@ -65,7 +69,7 @@
                 <div class="column is-3 is-offset-2">
                     <h2><strong>Category</strong></h2>
                     <ul>
-                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                        <li><a style="color:black;" href="#">Lorem ipsum dolor sit amet</a></li>
                         <li><a href="#">Vestibulum errato isse</a></li>
                         <li><a href="#">Lorem ipsum dolor sit amet</a></li>
                         <li><a href="#">Aisia caisia</a></li>
@@ -97,21 +101,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="content has-text-centered">
-                <p>
-                    <a class="icon" href="https://github.com/BulmaTemplates/bulma-templates">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </p>
-                <div class="control level-item">
-                    <a href="https://github.com/BulmaTemplates/bulma-templates">
-                        <div class="tags has-addons">
-                            <span class="tag is-dark">Bulma Templates</span>
-                            <span class="tag is-info">MIT license</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
+          
         </div>
 
     </footer>

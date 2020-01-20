@@ -12,7 +12,7 @@ namespace XtendersProject.Pages
     {
         public IActionResult OnGet()
         {
-            return Redirect("/web/viewer.html");
+            return Redirect("/Catalogue/index.html?file=test.pdf");
         }
     }
 }
