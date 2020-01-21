@@ -1,0 +1,41 @@
+﻿@page
+@model XtendersProject.GetAQuoteModel
+@{
+    ViewData["Title"] = "Get A Quote";
+    Layout = "~/Pages/Shared/_BulmaLayout.cshtml";
+}
+
+
+    @*<div class="container has-text-centered" style="margin-top:10px;">
+        <div class="box column is-half is-offset-one-quarter">
+            <p class="title">
+                “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+            </p>
+            <p class="subtitle">
+                Jeff Atwood
+            </p>
+        </div>
+    </div>*@
+<section class="container" style="margin-top:20px;">
+    <div class="row columns is-multiline">
+        @foreach (var p in Model.Products)
+        {
+            <div class="column is-one-third ">
+                <div class="card round is-shady">
+                    <div class="card-image ">
+                        <figure class="image">
+                            <img src=@p.PicUrl alt="@p.Name">
+                        </figure>
+                    </div>
+                    <div class="card-content has-text-centered">
+
+                        <div class="content">
+                            @p.Description
+                        </div>
+                        <button class="button is-outlined is-primary is-12">Get A Quote</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>

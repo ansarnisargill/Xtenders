@@ -15,3 +15,16 @@
         menu.classList.toggle('is-active');
     });
 })();
+
+
+
+function openModal(target) {
+    var $target = document.getElementById(target);
+    $target.classList.add('is-active');
+}
+
+function closeModals(target) {
+    var $target = document.getElementById(target);
+    $targrt.classList.remove('is-active');
+
+}

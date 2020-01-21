@@ -154,3 +154,4 @@ C:\Users\it\Desktop\Xtenders\obj\Debug\netcoreapp2.2\XtendersProject.Views.pdb
 C:\Users\it\Desktop\Xtenders\obj\Debug\netcoreapp2.2\XtendersProject.dll
 C:\Users\it\Desktop\Xtenders\obj\Debug\netcoreapp2.2\XtendersProject.pdb
 C:\Users\it\Desktop\Xtenders\obj\Debug\netcoreapp2.2\XtendersProject.csproj.CopyComplete
+C:\Users\it\Desktop\Xtenders\obj\Debug\netcoreapp2.2\Razor\Pages\GetAQuote.cshtml.g.cs
