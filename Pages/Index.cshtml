@@ -5,6 +5,11 @@
     Layout = "~/Pages/Shared/_BulmaLayout.cshtml";
 
 }
+<style>
+    .card {
+        height: 100%;
+    }
+</style>
 <section class="hero themeBGColor is-medium is-bold">
     <div class="hero-body">
         <div class="container has-text-centered">
@@ -17,28 +22,28 @@
         </div>
     </div>
 </section>
-<div class="box cta">
-    <p class="has-text-centered">
-        <span class="tag is-primary">New</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat.
-    </p>
-</div>
+@if (!string.IsNullOrEmpty(Model.homePageData.Announcement))
+{
+    <div class="box cta">
+        <p class="has-text-centered">
+            <span class="tag is-primary">New</span> @Model.homePageData.Announcement
+        </p>
+    </div>
+}
 <section class="container">
     <div class="columns features">
         <div class="column is-4">
             <div class="card is-shady">
                 <div class="card-image has-text-centered">
-                    <i class="fa fa-paw"></i>
+                    <i class="fa fa-delicious"></i>
                 </div>
                 <div class="card-content">
                     <div class="content">
-                        <h4>Tristique senectus et netus et. </h4>
+                        <h4>@Model.homePageData.QualityProductHeading</h4>
                         <p>
-                            Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec.
-                            Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut
-                            consequat semper viverra nam.
+                            @Model.homePageData.QualityProductText
                         </p>
-                        <p><a href="#">Learn more</a></p>
+
                     </div>
                 </div>
             </div>
@@ -46,18 +51,15 @@
         <div class="column is-4">
             <div class="card is-shady">
                 <div class="card-image has-text-centered">
-                    <i class="fa fa-empire"></i>
+                    <i class="fa fa-truck"></i>
                 </div>
                 <div class="card-content">
                     <div class="content">
-                        <h4>Tempor orci dapibus ultrices in.</h4>
+                        <h4>@Model.homePageData.DeliveryHeading</h4>
                         <p>
-                            Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed
-                            arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas
-                            cmonsu songue. Phasellus vestibulum lorem
-                            sed risus.
+                            @Model.homePageData.DeliveryText
                         </p>
-                        <p><a href="#">Learn more</a></p>
+
                     </div>
                 </div>
             </div>
@@ -65,33 +67,30 @@
         <div class="column is-4">
             <div class="card is-shady">
                 <div class="card-image has-text-centered">
-                    <i class="fa fa-apple"></i>
+                    <i class="fa fa-at"></i>
                 </div>
                 <div class="card-content">
                     <div class="content">
-                        <h4> Leo integer malesuada nunc vel risus. </h4>
+                        <h4>@Model.homePageData.CustomerServiceHeading</h4>
                         <p>
-                            Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla
-                            pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra
-                            maecenas accumsan lacus vel facilisis.
+                            @Model.homePageData.CustomerServiceText
                         </p>
-                        <p><a href="#">Learn more</a></p>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="intro column is-8 is-offset-2">
-        <h2 class="title">Perfect for developers or designers!</h2><br>
+        <h2 class="title">@Model.homePageData.ProductHeading</h2><br>
         <p class="subtitle">
-            Vel fringilla est ullamcorper eget nulla facilisi. Nulla facilisi nullam vehicula ipsum a.
-            Neque egestas congue quisque egestas diam in arcu cursus.
+            @Model.homePageData.ProductIntro
         </p>
     </div>
     <div class="row columns is-multiline">
         @foreach (var p in Model.Products)
         {
-            <div class="column is-one-third">
+            <div class="column is-one-third" >
                 <div class="card large round">
                     <div class="card-image ">
                         <figure class="image">
@@ -99,7 +98,7 @@
                         </figure>
                     </div>
                     <div class="card-content has-text-centered">
-
+                        <div class="title"> @p.Name</div>
                         <div class="content">
                             @p.Description
                         </div>

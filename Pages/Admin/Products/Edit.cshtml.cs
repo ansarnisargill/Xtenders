@@ -13,9 +13,8 @@ namespace XtendersProject
 {
     public class EditModel : PageModel
     {
-        private readonly XtendersProject.Data.Context _context;
-
-        public EditModel(XtendersProject.Data.Context context)
+        private readonly Context _context;
+        public EditModel(Context context)
         {
             _context = context;
         }
@@ -45,6 +44,9 @@ namespace XtendersProject
             {
                 return Page();
             }
+            var ReadableProduct = await _context.Products.FirstOrDefaultAsync(m => m.ID == Product.ID);
+            Product.AddedDate = ReadableProduct.AddedDate;
+            Product.PicUrl = ReadableProduct.PicUrl;
 
             _context.Attach(Product).State = EntityState.Modified;
 
