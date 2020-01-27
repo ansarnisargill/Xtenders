@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\XtendersProject.csproj",
+  "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\XtendersProject.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2869,7 +2869,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.SpaServices.Prerendering.PrerenderTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.SpaServices",
-        "Documentation": "\n            <summary>\n            A tag helper for prerendering JavaScript applications on the server.\n            </summary>\n        ",
+        "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": false,
         "TagMatchingRules": [
@@ -2898,7 +2898,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            Specifies the path to the JavaScript module containing prerendering code.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "ModuleName"
@@ -2912,7 +2912,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            If set, specifies the name of the CommonJS export that is the prerendering function to execute.\n            If not set, the JavaScript module's default CommonJS export must itself be the prerendering function.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "ExportName"
@@ -2926,7 +2926,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            An optional JSON-serializable parameter to be supplied to the prerendering code.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "CustomDataParameter"
@@ -2940,7 +2940,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            The maximum duration to wait for prerendering to complete.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "TimeoutMillisecondsParameter"
@@ -2961,93 +2961,108 @@
   "RootNamespace": "XtendersProject",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Create.cshtml",
-      "TargetPath": "Pages\\Admin\\Products\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Shared\\_BulmaLayout.cshtml",
-      "TargetPath": "Pages\\Shared\\_BulmaLayout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Shared\\_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Admin.cshtml",
-      "TargetPath": "Pages\\Admin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Delete.cshtml",
-      "TargetPath": "Pages\\Admin\\Products\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Index.cshtml",
-      "TargetPath": "Pages\\Admin\\Products\\Index.cshtml",
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Shared\\_BulmaLayout.cshtml",
+      "TargetPath": "Pages\\Shared\\_BulmaLayout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Catalogue.cshtml",
-      "TargetPath": "Pages\\Catalogue.cshtml",
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Delete.cshtml",
+      "TargetPath": "Pages\\Admin\\Products\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Index.cshtml",
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\GetAQuote.cshtml",
+      "TargetPath": "Pages\\GetAQuote.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\About.cshtml",
-      "TargetPath": "Pages\\About.cshtml",
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Create.cshtml",
+      "TargetPath": "Pages\\Admin\\Products\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Edit.cshtml",
-      "TargetPath": "Pages\\Admin\\Products\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Details.cshtml",
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Details.cshtml",
       "TargetPath": "Pages\\Admin\\Products\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Quotation.cshtml",
+      "TargetPath": "Pages\\Quotation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Received.cshtml",
+      "TargetPath": "Pages\\Received.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Index.cshtml",
+      "TargetPath": "Pages\\Admin\\Products\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Admin.cshtml",
+      "TargetPath": "Pages\\Admin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\it\\Desktop\\Xtenders\\Pages\\Contact.cshtml",
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Catalogue.cshtml",
+      "TargetPath": "Pages\\Catalogue.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Admin\\Products\\Edit.cshtml",
+      "TargetPath": "Pages\\Admin\\Products\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\Contact.cshtml",
       "TargetPath": "Pages\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ansar\\Desktop\\Xtenders\\Pages\\About.cshtml",
+      "TargetPath": "Pages\\About.cshtml",
       "FileKind": "mvc"
     }
   ],

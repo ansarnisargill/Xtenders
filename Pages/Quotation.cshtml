@@ -1,0 +1,56 @@
+﻿@page "{id:int}"
+@model QuotationModel
+@{
+ViewData["Title"] = "Contact Us";
+Layout = "~/Pages/Shared/_BulmaLayout.cshtml";
+
+}
+<div class="main-content">
+    <!-- Begin About Me Section -->
+    <div class="section-light about-me" id="about-me">
+        <div class="container box">
+            <div class="column is-12 has-background-link box about-me">
+                <h1 style="font-family:'Kaushan Script';" class="title has-text-white has-text-centered section-title">
+                    Qoutation for @Model._product.Name</h1>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column has-text-centered is-6" style="padding:20px;">
+                    <img src=@Model._product.PicUrl alt="@Model._product.Name">
+                    <div class="title has-text-link">@Model._product.Name</div>
+                    <div class="content">
+                        @Model._product.Description
+                    </div>
+                </div>
+                <div class="column" style="padding:20px;">
+                    <div class="box has-text-centered ">
+                        <form method="POST">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input asp-for="Quotation.Name" required class="input is-medium" type="text">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control">
+                                <input class="input is-medium" required asp-for="Quotation.Email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Inquiry</label>
+                            <div class="control">
+                                <textarea asp-for="Quotation.Detail" required class="textarea is-medium"></textarea>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <button type="submit"
+                                class="button is-link is-fullwidth has-text-weight-medium is-medium">Send Inquiry</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
