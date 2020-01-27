@@ -1,0 +1,44 @@
+﻿@page
+@model XtendersProject.About.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+    <div class="card p-5">
+        <h4>AboutUs Page Properties</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.AboutUs.AboutUsHeading)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AboutUs.AboutUsHeading)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.AboutUs.AboutUsText)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AboutUs.AboutUsText)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.AboutUs.WhyUsHeading)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AboutUs.WhyUsHeading)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.AboutUs.WhyUsText)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AboutUs.WhyUsText)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.AboutUs.ContactUsText)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AboutUs.ContactUsText)
+            </dd>
+        </dl>
+        <a asp-page="./Edit" class="btn btn-outline-primary btn-block btn-lg" asp-route-id="@Model.AboutUs.Id">Edit</a>
+    </div>

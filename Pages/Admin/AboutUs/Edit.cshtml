@@ -1,0 +1,53 @@
+﻿@page
+@model XtendersProject.About.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+
+
+    <div class="card p-5">
+        <h4>About Us Page Data</h4>
+        <hr />
+       
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="AboutUs.Id" />
+                <div class="form-group">
+                    <label asp-for="AboutUs.AboutUsHeading" class="control-label"></label>
+                    <textarea asp-for="AboutUs.AboutUsHeading" class="form-control" ></textarea>
+                    <span asp-validation-for="AboutUs.AboutUsHeading" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AboutUs.AboutUsText" class="control-label"></label>
+                    <textarea asp-for="AboutUs.AboutUsText" class="form-control" ></textarea>
+                    <span asp-validation-for="AboutUs.AboutUsText" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AboutUs.WhyUsHeading" class="control-label"></label>
+                    <textarea asp-for="AboutUs.WhyUsHeading" class="form-control" ></textarea>
+                    <span asp-validation-for="AboutUs.WhyUsHeading" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AboutUs.WhyUsText" class="control-label"></label>
+                    <textarea asp-for="AboutUs.WhyUsText" class="form-control" ></textarea>
+                    <span asp-validation-for="AboutUs.WhyUsText" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AboutUs.ContactUsText" class="control-label"></label>
+                    <textarea asp-for="AboutUs.ContactUsText" class="form-control" ></textarea>
+                    <span asp-validation-for="AboutUs.ContactUsText" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-outline-primary btn-lg btn-block" />
+                </div>
+            </form>
+    </div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

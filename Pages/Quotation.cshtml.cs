@@ -24,8 +24,10 @@ namespace XtendersProject.Pages
             _product = _context.Products.Find(id);
             return Page();
         }
-        public IActionResult OnPost(){
-            return Content(Quotation.Detail);
+        public async Task<IActionResult> OnPostAsync(){
+            await _context.Quotations.AddAsync(Quotation);
+            await _context.SaveChangesAsync();
+            return Redirect("/Received");
         }
     }
 }

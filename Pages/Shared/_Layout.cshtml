@@ -32,12 +32,29 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Admin/Products/Index">Home</a>
+                            <a class="btn m-1 btn-outline-primary" asp-area="" asp-page="/Admin">Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="btn m-1 btn-outline-primary " asp-area="" asp-page="/Admin/Products/Index">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn m-1 btn-outline-primary " asp-area="" asp-page="/Admin/HomeData/Details">Home Page Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn m-1 btn-outline-primary " asp-area="" asp-page="/Admin/AboutUs/Details">About Us Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn m-1 btn-outline-primary " asp-area="" asp-page="/Admin/Quotations/Index">Quotations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" btn m-1 btn-outline-dark " asp-area="" asp-page="/Index">Got To Home Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" btn m-1 btn-outline-danger " asp-area="" asp-page="/UserAuth/Logout">Logout</a>
                         </li>
                     </ul>
+                   
+
                 </div>
             </div>
         </nav>

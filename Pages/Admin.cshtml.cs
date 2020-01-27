@@ -12,11 +12,14 @@ namespace XtendersProject.Pages
     {
         public IActionResult OnGet()
         {
-            if (HttpContext.Session.GetInt32("Id") == null)
+            if (HttpContext.Session.GetInt32("Id") != null)
+            {
+                return Page();
+            }
+            else
             {
                 return Redirect("/UserAuth/Login");
             }
-            return Page();
         }
     }
 }

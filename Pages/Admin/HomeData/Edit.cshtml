@@ -1,0 +1,79 @@
+﻿@page
+@model XtendersProject.Home.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div class="card p-4">
+    <h4>Edit Home Page Data</h4>
+
+
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="HomePageData.ID" />
+        <div class="form-group">
+            <label asp-for="HomePageData.TagLine" class="control-label"></label>
+            <input asp-for="HomePageData.TagLine" class="form-control" />
+            <span asp-validation-for="HomePageData.TagLine" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="HomePageData.MainIntro" class="control-label"></label>
+            <textarea asp-for="HomePageData.MainIntro" class="form-control" ></textarea>
+            <span asp-validation-for="HomePageData.MainIntro" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="HomePageData.Announcement" class="control-label"></label>
+            <input asp-for="HomePageData.Announcement" class="form-control" />
+            <span asp-validation-for="HomePageData.Announcement" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="HomePageData.QualityProductHeading" class="control-label"></label>
+            <input asp-for="HomePageData.QualityProductHeading" class="form-control" />
+            <span asp-validation-for="HomePageData.QualityProductHeading" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="HomePageData.CustomerServiceHeading" class="control-label"></label>
+            <input asp-for="HomePageData.CustomerServiceHeading" class="form-control" />
+            <span asp-validation-for="HomePageData.CustomerServiceHeading" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="HomePageData.DeliveryHeading" class="control-label"></label>
+            <input asp-for="HomePageData.DeliveryHeading" class="form-control" />
+            <span asp-validation-for="HomePageData.DeliveryHeading" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="HomePageData.QualityProductText" class="control-label"></label>
+            <textarea asp-for="HomePageData.QualityProductText" class="form-control" ></textarea>
+            <span asp-validation-for="HomePageData.QualityProductText" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="HomePageData.CustomerServiceText" class="control-label"></label>
+            <textarea asp-for="HomePageData.CustomerServiceText" class="form-control" ></textarea>
+            <span asp-validation-for="HomePageData.CustomerServiceText" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="HomePageData.DeliveryText" class="control-label"></label>
+            <textarea asp-for="HomePageData.DeliveryText" class="form-control" ></textarea>
+            <span asp-validation-for="HomePageData.DeliveryText" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="HomePageData.ProductHeading" class="control-label"></label>
+            <input asp-for="HomePageData.ProductHeading" class="form-control" />
+            <span asp-validation-for="HomePageData.ProductHeading" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="HomePageData.ProductIntro" class="control-label"></label>
+            <input asp-for="HomePageData.ProductIntro" class="form-control" />
+            <span asp-validation-for="HomePageData.ProductIntro" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-outline-primary btn-blocl col-4 offset-4" />
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

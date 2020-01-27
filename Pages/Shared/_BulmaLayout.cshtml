@@ -20,8 +20,6 @@
 </head>
 
 <body onload="Initialize()">
-    <partial name="_CookieConsentPartial" />
-
     <header>
         <nav class="navbar">
             <div class="container">
@@ -57,34 +55,27 @@
             </div>
         </nav>
     </header>
-    @RenderBody()
+    <div style="min-height:85vh">
+        @RenderBody()
+    </div>
 
-
-    <footer style="margin-top:10px;">
+    <footer style="margin-top:10px;max-height:15vh;">
         <div class="box">
             <div class="columns">
-                <div class="column is-3 is-offset-2">
-                    <h2><strong>Category</strong></h2>
-                    <ul>
-                        <li><a style="color:black;" href="#">Lorem ipsum dolor sit amet</a></li>
-
-                    </ul>
+                <div class="column is-4 has-text-centered has-vertically-aligned-content">
+                    <p class="title has-text-info">&copy; 2016 - @DateTime.Now.Year</p>
                 </div>
-                <div class="column is-3">
-                    <h2><strong>Category</strong></h2>
-                    <ul>
-                        <li><a style="color:black;" href="#">Labore et dolore magna aliqua</a></li>
-
-                    </ul>
+                <div class="column is-4 has-text-centered">
+                
                 </div>
-                <div class="column is-4">
-                    <h2><strong>Category</strong></h2>
-                    <ul>
-                        <li><a style="color:black;" href="#">Objects in space</a></li>
-                        <li><a style="color:black;" href="#">Playing cards with coyote</a></li>
-
-                    </ul>
+                <div class="column is-4 has-text-centered has-vertically-aligned-content">
+                    <div class="social-media">
+                        <a href="https://facebook.com" target="_blank" class="button is-large is-link"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="button is-grey is-large"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="button is-info is-large"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
                 </div>
+
             </div>
 
         </div>

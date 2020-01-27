@@ -2,15 +2,14 @@
 @model AdminModel
 @{
     ViewData["Title"] = "Admin";
-    Layout = "~/Pages/Shared/_BulmaLayout.cshtml";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
 
-<a class="btn btn-block btn-lg btn-outline-dark mt-3 " href="/Roles/Index">Manage Roles</a>
-<a class="btn btn-block btn-lg btn-outline-success mt-3 " href="/Employees/Index">Manage Employees</a>
-<a class="btn btn-block btn-lg btn-outline-info mt-3" href="/Shifts/Index">Manage Shifts</a>
-<a class="btn btn-block btn-lg btn-outline-primary mt-3" href="/AdminUserShiftsReport">Shifts Report</a>
-<a class="btn btn-block btn-lg btn-outline-secondary mt-3" href="/EmployeeWorkReport">Employees Work Report</a>
+<a class="btn btn-block btn-lg btn-outline-dark mt-3 " href="/Admin/HomeData/Details">Manage HomePage Data</a>
+<a class="btn btn-block btn-lg btn-outline-primary mt-3" href="/Admin/Products/Index">Manage Products</a>
+<a class="btn btn-block btn-lg btn-outline-info mt-3" href="/Admin/Quotations/Index">Show Quotations</a>
+
 
 
 

@@ -1,0 +1,83 @@
+﻿@page
+@model XtendersProject.Home.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+    <div class="card p-5">
+        <h4>Home Page Data</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.HomePageData.TagLine)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.HomePageData.TagLine)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.HomePageData.MainIntro)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.HomePageData.MainIntro)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.HomePageData.Announcement)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.HomePageData.Announcement)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.HomePageData.QualityProductHeading)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.HomePageData.QualityProductHeading)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.HomePageData.CustomerServiceHeading)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.HomePageData.CustomerServiceHeading)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.HomePageData.DeliveryHeading)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.HomePageData.DeliveryHeading)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.HomePageData.QualityProductText)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.HomePageData.QualityProductText)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.HomePageData.CustomerServiceText)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.HomePageData.CustomerServiceText)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.HomePageData.DeliveryText)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.HomePageData.DeliveryText)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.HomePageData.ProductHeading)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.HomePageData.ProductHeading)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.HomePageData.ProductIntro)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.HomePageData.ProductIntro)
+            </dd>
+        </dl>
+        <a asp-page="./Edit" class="btn btn-lg btn-outline-primary btn-block" asp-route-id="@Model.HomePageData.ID">Edit</a>
+    </div>
+
+    
+
